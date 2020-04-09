@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: b7e7202be0aa2af41b9640158a90a748
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6869325624984279803
+    second: Crank1
+  - first:
+      213: -2205522050570982886
+    second: Gauge
+  - first:
+      213: 1229794671371557974
+    second: HealthBar
+  - first:
+      213: -7859544607282556093
+    second: HealthBar
+  - first:
+      213: 8996260626950966665
+    second: HUD_5
+  - first:
+      213: 4529786283596834260
+    second: HUD_6
+  - first:
+      213: 1993536654063605826
+    second: HealthBar
+  - first:
+      213: 1993536654063605826
+    second: Crank2
+  - first:
+      213: -8154498446710104070
+    second: Gauge Pin
+  - first:
+      213: 2337502951825031173
+    second: Crank3
+  - first:
+      213: 5721398386175345471
+    second: Crank4
+  - first:
+      213: 648253825859470589
+    second: ItemInventory
+  - first:
+      213: 4206788867963924333
+    second: ConsumableInv
+  - first:
+      213: 8704935041826096640
+    second: Gas1
+  - first:
+      213: 2145714475534776539
+    second: Gas2
+  - first:
+      213: -2432584742896022461
+    second: Gas3
+  - first:
+      213: 5284182518634144936
+    second: Gas4
+  - first:
+      213: 6312760128831831962
+    second: Gas5
+  - first:
+      213: 786062436872600475
+    second: Gas6
+  - first:
+      213: -3003887064946303192
+    second: Gas7
+  - first:
+      213: -7587223567414263667
+    second: Crank1
+  - first:
+      213: 6256912360499392662
+    second: HUD_1
+  - first:
+      213: 3335838636671504042
+    second: HUD_2
+  - first:
+      213: -7859544607282556093
+    second: HUD_3
+  - first:
+      213: -2483147177637214207
+    second: HUD_4
+  - first:
+      213: 2933845967799184529
+    second: HUD_7
+  - first:
+      213: -1607964472022901426
+    second: HUD_8
+  - first:
+      213: -7389164557081070106
+    second: HUD_9
+  - first:
+      213: 821682988288109026
+    second: HUD_10
+  - first:
+      213: 916082453554011031
+    second: HUD_11
+  - first:
+      213: 3936234763868591185
+    second: HUD_12
+  - first:
+      213: -6916965441820110598
+    second: HUD_13
+  - first:
+      213: -8712741707094424151
+    second: HUD_14
+  - first:
+      213: 173104793695492812
+    second: HUD_15
+  - first:
+      213: 3765039964252322092
+    second: HUD_16
+  - first:
+      213: -7217833683216916554
+    second: HUD_17
+  - first:
+      213: -2205522050570982886
+    second: HUD_1
+  - first:
+      213: -6869325624984279803
+    second: Crank1
+  - first:
+      213: 1229794671371557974
+    second: HUD_2
+  - first:
+      213: 8874861396630998885
+    second: HUD_3
+  - first:
+      213: -8154498446710104070
+    second: HUD_4
+  - first:
+      213: 2935448580980975437
+    second: HUD_5
+  - first:
+      213: -4683588481267544494
+    second: HUD_6
+  - first:
+      213: 5819465737997270363
+    second: HUD_7
+  - first:
+      213: 998355546706964577
+    second: HUD_8
+  - first:
+      213: 1707291956357533417
+    second: HUD_9
+  - first:
+      213: -8941410180395923178
+    second: HUD_10
+  - first:
+      213: 5757796892206273994
+    second: HUD_11
+  - first:
+      213: -1322831394811139839
+    second: HUD_12
+  - first:
+      213: 6955372452360514181
+    second: HUD_13
+  - first:
+      213: -8023160774312658786
+    second: HUD_14
+  - first:
+      213: -5342483658984822025
+    second: HUD_15
+  - first:
+      213: 4252850643963971932
+    second: HUD_16
+  - first:
+      213: -3524555037503003096
+    second: HUD_17
+  - first:
+      213: 1993536654063605826
+    second: Crank2
+  - first:
+      213: 2337502951825031173
+    second: Crank3
+  - first:
+      213: 5721398386175345471
+    second: Crank4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HUD_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 221
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aec6f51696461e0800000000000000
+      internalID: -2205522050570982886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crank1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 286
+        width: 71
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505e2544db04ba0a0800000000000000
+      internalID: -6869325624984279803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 241
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c15c5ecbb111110800000000000000
+      internalID: 1229794671371557974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 243
+        width: 89
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f84015b67d92b70800000000000000
+      internalID: 8874861396630998885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 154
+        width: 133
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff9e5afdd665de80800000000000000
+      internalID: -8154498446710104070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 172
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47abc58eeeccb820800000000000000
+      internalID: 2935448580980975437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_8
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 172
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1607209841fdadd00800000000000000
+      internalID: 998355546706964577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_10
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 171
+        width: 52
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619807680dab9e380800000000000000
+      internalID: -8941410180395923178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_12
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 171
+        width: 52
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1092c86eadb54ade0800000000000000
+      internalID: -1322831394811139839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 170
+        width: 52
+        height: 10
+      alignment: 9
+      pivot: {x: 0.49024567, y: 0.46454796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a6c7fe462768060800000000000000
+      internalID: 6955372452360514181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_14
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 170
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98fe37c8c108a090800000000000000
+      internalID: -8023160774312658786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_15
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 170
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa61e7fa6fabd5b0800000000000000
+      internalID: -5342483658984822025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 87
+        width: 74
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826e1560ed3461fc0800000000000000
+      internalID: -3524555037503003096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crank2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 283
+        width: 73
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2489e2056077aab10800000000000000
+      internalID: 1993536654063605826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crank3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 284
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50045f0dc8a707020800000000000000
+      internalID: 2337502951825031173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crank4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 285
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33897ad48d766f40800000000000000
+      internalID: 5721398386175345471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
