@@ -27,10 +27,6 @@ public class Interaction : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (currentObject == GameObject.Find("Shotgun"))
-        {
-            Debug.Log("Current Weapon is Shotgun");
-        }
     }
 
     void Update()
