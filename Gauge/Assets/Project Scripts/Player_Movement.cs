@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
+    public Weapon_Test curWeapon;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -35,7 +36,6 @@ public class Player_Movement : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;

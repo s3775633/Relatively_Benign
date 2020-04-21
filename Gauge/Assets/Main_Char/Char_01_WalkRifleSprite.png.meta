@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 8059121d00e1c074e98245ada1dbdcce
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8451772792726412279
+    second: Char_01_WalkRifleSprite_0
+  - first:
+      213: -5524587462581100772
+    second: Char_01_WalkRifleSprite_1
+  - first:
+      213: -5928380122918665577
+    second: Char_01_WalkRifleSprite_2
+  - first:
+      213: 1699936656017925333
+    second: Char_01_WalkRifleSprite_3
+  - first:
+      213: 5503304957096307485
+    second: Char_01_WalkRifleSprite_4
+  - first:
+      213: 2783094926708947528
+    second: Char_01_WalkRifleSprite_5
+  - first:
+      213: -2082969542536054268
+    second: Char_01_WalkRifleSprite_6
+  - first:
+      213: -4770626442562662253
+    second: Char_01_WalkRifleSprite_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -85,7 +109,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Char_01_WalkRifleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 8
+        width: 160
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9042b37ac6545ba80800000000000000
+      internalID: -8451772792726412279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkRifleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 8
+        width: 160
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79242f720b92abda0800000000000000
+      internalID: -5928380122918665577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkRifleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 8
+        width: 160
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d42d9ac163679710800000000000000
+      internalID: 1699936656017925333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkRifleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 8
+        width: 160
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84abda2271a8f9620800000000000000
+      internalID: 2783094926708947528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

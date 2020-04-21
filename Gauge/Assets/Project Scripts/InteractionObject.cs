@@ -5,4 +5,5 @@ using UnityEngine;
 public class InteractionObject : MonoBehaviour
 {
     public bool inventory;
+    public bool weapon;
 }

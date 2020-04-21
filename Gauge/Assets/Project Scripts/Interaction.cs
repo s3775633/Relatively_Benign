@@ -11,7 +11,6 @@ public class Interaction : MonoBehaviour
     {
         if (other.CompareTag("Interactive_Object"))
         {
-            Debug.Log(other.name);
             currentObject = other.gameObject;
             currentInterObjScript = currentObject.GetComponent<InteractionObject>();
         }
