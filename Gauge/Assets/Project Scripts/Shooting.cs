@@ -5,7 +5,8 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bullet;
+    public GameObject Pistol_Bullet;
+    public GameObject ShotGun_Bullet;
     public GameObject weapon;
 
     public float bulletForce = 20f;
@@ -17,7 +18,6 @@ public class Shooting : MonoBehaviour
         weapon = GetComponent<Inventory>().currentWeapon;
         if (weapon)
         {
-            Debug.Log(weapon.name);
             if (weapon.name == "Pistol")
             {
                 fireRate = 0.5f;
@@ -63,16 +63,16 @@ public class Shooting : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject bullet1 = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        GameObject bullet1 = Instantiate(Pistol_Bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         nextFire = fireRate;
     }
     public void ShootShotgun()
     {
-        GameObject bullet1 = Instantiate(bullet, firePoint.position, firePoint.rotation);
-        GameObject bullet2 = Instantiate(bullet, firePoint.position, firePoint.rotation);
-        GameObject bullet3 = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        GameObject bullet1 = Instantiate(ShotGun_Bullet, firePoint.position, firePoint.rotation);
+        GameObject bullet2 = Instantiate(ShotGun_Bullet, firePoint.position, firePoint.rotation);
+        GameObject bullet3 = Instantiate(ShotGun_Bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D rb1 = bullet1.GetComponent<Rigidbody2D>();
         Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
         Rigidbody2D rb3 = bullet3.GetComponent<Rigidbody2D>();
