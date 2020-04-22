@@ -6,16 +6,25 @@ public class Pistol_bullet : MonoBehaviour
 {
     public Transform player;
     public Rigidbody2D rb;
+    public int damage = 20;
 
     void OnTriggerEnter2D (Collider2D hitInfo)
     {
         Debug.Log(hitInfo);
-        if (hitInfo)
+        if (hitInfo.gameObject.GetComponent<Fast_Enemy_Behaviour>())
         {
             Fast_Enemy_Behaviour enemy = hitInfo.transform.GetComponent<Fast_Enemy_Behaviour>();
             if (enemy != null)
             {
-                enemy.DamageFastEnemy(20);
+                enemy.DamageFastEnemy(damage);
+            }
+        }
+        else if (hitInfo.gameObject.GetComponent<Strong_Enemy>())
+        {
+            Strong_Enemy enemy = hitInfo.transform.GetComponent<Strong_Enemy>();
+            if (enemy != null)
+            {
+                enemy.DamageStrongEnemy(damage);
             }
         }
         Destroy(gameObject);

@@ -1,7 +1,112 @@
 fileFormatVersion: 2
 guid: 6f529760a47f91a478d440a86d7dd068
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5008271992139098183
+    second: StrongEnemySprite_0
+  - first:
+      213: -6351858624192153789
+    second: StrongEnemySprite_1
+  - first:
+      213: 3858239199404386833
+    second: StrongEnemySprite_2
+  - first:
+      213: -1004379797146331415
+    second: StrongEnemySprite_3
+  - first:
+      213: -2222809005697390925
+    second: StrongEnemySprite_4
+  - first:
+      213: 4710363415686863109
+    second: StrongEnemySprite_5
+  - first:
+      213: -518389185637210043
+    second: StrongEnemySprite_6
+  - first:
+      213: 8866475024035632965
+    second: StrongEnemySprite_7
+  - first:
+      213: 8526759874875234980
+    second: StrongEnemySprite_8
+  - first:
+      213: -2453350823600504484
+    second: StrongEnemySprite_9
+  - first:
+      213: -3850650052150299516
+    second: StrongEnemySprite_10
+  - first:
+      213: -9195999424378496062
+    second: StrongEnemySprite_11
+  - first:
+      213: 4232302761757955588
+    second: StrongEnemySprite_12
+  - first:
+      213: -2412495805544247543
+    second: StrongEnemySprite_13
+  - first:
+      213: -831597630828695784
+    second: StrongEnemySprite_14
+  - first:
+      213: 8719283019488466028
+    second: StrongEnemySprite_15
+  - first:
+      213: -5613945986869906345
+    second: StrongEnemySprite_16
+  - first:
+      213: 4717453529538399810
+    second: StrongEnemySprite_17
+  - first:
+      213: -986853255081446218
+    second: StrongEnemySprite_18
+  - first:
+      213: 2148489453518518690
+    second: StrongEnemySprite_19
+  - first:
+      213: -4658572752352438705
+    second: StrongEnemySprite_20
+  - first:
+      213: 1230183148915388282
+    second: StrongEnemySprite_21
+  - first:
+      213: 9045626980036136968
+    second: StrongEnemySprite_22
+  - first:
+      213: -6893909181137359791
+    second: StrongEnemySprite_23
+  - first:
+      213: -8766215736376757366
+    second: StrongEnemySprite_24
+  - first:
+      213: -8392748036523352728
+    second: StrongEnemySprite_25
+  - first:
+      213: -8133632836238490621
+    second: StrongEnemySprite_26
+  - first:
+      213: -5365946632548000833
+    second: StrongEnemySprite_27
+  - first:
+      213: -2152442193883423857
+    second: StrongEnemySprite_28
+  - first:
+      213: 2046014377987460904
+    second: StrongEnemySprite_29
+  - first:
+      213: -107944445409137574
+    second: StrongEnemySprite_30
+  - first:
+      213: -3452569780499310446
+    second: StrongEnemySprite_31
+  - first:
+      213: 3386479386234563293
+    second: StrongEnemySprite_32
+  - first:
+      213: 8467508884898979634
+    second: StrongEnemySprite_33
+  - first:
+      213: 3267726908258369558
+    second: StrongEnemySprite_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +145,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +176,420 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: StrongEnemySprite_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 359
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d20a782b0f7ab0800000000000000
+      internalID: -5008271992139098183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 355
+        width: 78
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34776812c3aa9d7a0800000000000000
+      internalID: -6351858624192153789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 355
+        width: 78
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a6cfa2c183b8530800000000000000
+      internalID: 3858239199404386833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 354
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6938b55e9bf02f0800000000000000
+      internalID: -1004379797146331415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_4
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 353
+        width: 103
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b62edb7cfef621e0800000000000000
+      internalID: -2222809005697390925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 245
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d20be1929e5140800000000000000
+      internalID: 4710363415686863109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 245
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548a0be38cf4ec8f0800000000000000
+      internalID: -518389185637210043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 245
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5475489ce0c0c0b70800000000000000
+      internalID: 8866475024035632965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 305
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1ef2fde2255670800000000000000
+      internalID: 8526759874875234980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_9
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 245
+        width: 84
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5141e1ac62f3fdd0800000000000000
+      internalID: -2453350823600504484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 135
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484fd3fdd2ebf8ac0800000000000000
+      internalID: -3850650052150299516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 135
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb193bfe3f316080800000000000000
+      internalID: -9195999424378496062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_12
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 135
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406dc7820f82cba30800000000000000
+      internalID: 4232302761757955588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 12
+        width: 83
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f4a68c8d7158ed0800000000000000
+      internalID: -2412495805544247543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_14
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 6
+        width: 96
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f266a5c529574f0800000000000000
+      internalID: -831597630828695784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1
+        width: 115
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754b3607ed14712b0800000000000000
+      internalID: -5613945986869906345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 12
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fe5cf5e0d721110800000000000000
+      internalID: 1230183148915388282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 13
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8005eb300d5888d70800000000000000
+      internalID: 9045626980036136968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StrongEnemySprite_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 14
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaa1b73f013ffe20800000000000000
+      internalID: 3386479386234563293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

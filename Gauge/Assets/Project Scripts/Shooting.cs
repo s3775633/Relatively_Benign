@@ -7,6 +7,8 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject Pistol_Bullet;
     public GameObject ShotGun_Bullet;
+    public GameObject Rifle_Bullet;
+    public GameObject MachineGun_Bullet;
     public GameObject weapon;
 
     public float bulletForce = 20f;
@@ -18,56 +20,70 @@ public class Shooting : MonoBehaviour
         weapon = GetComponent<Inventory>().currentWeapon;
         if (weapon)
         {
-            if (weapon.name == "Pistol")
-            {
-                fireRate = 0.5f;
-            }
-            else if (weapon.name == "Shotgun")
-            {
-                fireRate = 1.5f;
-            }
-            else if (weapon.name == "Rifle")
-            {
-                fireRate = 2f;
-            }
-            else if (weapon.name == "Machine Gun")
-            {
-                fireRate = 0.1f;
-            }
             if (nextFire > 0)
             {
                 nextFire -= Time.deltaTime;
                 return;
             }
-            else if(weapon.name == "Machine Gun")
-            { 
-                 if(Input.GetButton("Fire1"))
-                 {
-                    Shoot();
-                 }
-            }
-            else if(weapon.name == "Shotgun")
+            if (weapon.name == "Pistol")
             {
-                if(Input.GetButtonDown("Fire1"))
+                fireRate = 0.5f;
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    ShootPistol();
+                }
+            }
+            else if (weapon.name == "Shotgun")
+            {
+                fireRate = 1.5f;
+                if (Input.GetButtonDown("Fire1"))
                 {
                     ShootShotgun();
                 }
             }
-            else if (Input.GetButtonDown("Fire1"))
+            else if (weapon.name == "Rifle")
             {
-                Shoot();
+                fireRate = 2f;
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    ShootRifle();
+                }
             }
-
+            else if (weapon.name == "Machine Gun")
+            {
+                fireRate = 0.1f;
+                if (Input.GetButton("Fire1"))
+                {
+                    ShootMachineGun();
+                }
+            }
         }
     }
 
-    public void Shoot()
+    public void ShootPistol()
     {
         GameObject bullet1 = Instantiate(Pistol_Bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         nextFire = fireRate;
     }
+
+    public void ShootMachineGun()
+    {
+        GameObject bullet1 = Instantiate(MachineGun_Bullet, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        nextFire = fireRate;
+    }
+
+    public void ShootRifle()
+    {
+        GameObject bullet1 = Instantiate(Rifle_Bullet, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = bullet1.GetComponent<Rigidbody2D>();
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        nextFire = fireRate;
+    }
+
     public void ShootShotgun()
     {
         GameObject bullet1 = Instantiate(ShotGun_Bullet, firePoint.position, firePoint.rotation);

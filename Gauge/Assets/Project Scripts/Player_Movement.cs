@@ -9,7 +9,6 @@ public class Player_Movement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
-    public Weapon_Test curWeapon;
 
     Vector2 movement;
     Vector2 mousePos;

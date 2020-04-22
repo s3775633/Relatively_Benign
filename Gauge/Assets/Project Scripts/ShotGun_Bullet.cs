@@ -11,12 +11,20 @@ public class ShotGun_Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Debug.Log(hitInfo);
-        if (hitInfo)
+        if (hitInfo.gameObject.GetComponent<Fast_Enemy_Behaviour>())
         {
             Fast_Enemy_Behaviour enemy = hitInfo.transform.GetComponent<Fast_Enemy_Behaviour>();
             if (enemy != null)
             {
                 enemy.DamageFastEnemy(damage);
+            }
+        }
+        else if (hitInfo.gameObject.GetComponent<Strong_Enemy>())
+        {
+            Strong_Enemy enemy = hitInfo.transform.GetComponent<Strong_Enemy>();
+            if (enemy != null)
+            {
+                enemy.DamageStrongEnemy(damage);
             }
         }
         Destroy(gameObject);
