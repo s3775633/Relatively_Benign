@@ -5,10 +5,14 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float stamina = 200f;
 
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
+
+    private float recoverTime = 2;
+    private float staminaRecover = -1f;
 
     Vector2 movement;
     Vector2 mousePos;
@@ -21,14 +25,43 @@ public class Player_Movement : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (Input.GetButtonDown("Space"))
+        if (staminaRecover > 0)
+        {
+            stamina += 1;
+            staminaRecover -= Time.deltaTime;
+            return;
+        }
+        if (Input.GetButton("Space"))
         {
             moveSpeed = 10f;
         }
-        else if (Input.GetButtonUp("Space"))
+        else
         {
             moveSpeed = 5f;
+        }
+        if (movement.sqrMagnitude >= 1 && movement.sqrMagnitude <= 2 && moveSpeed == 5)
+        {
+            stamina -= 0.5f;
+        }
+        else if(movement.sqrMagnitude >= 1 && movement.sqrMagnitude <= 2 && moveSpeed == 10)
+        {
+            stamina -= 1f;
+        }
+        else
+        {
+            if(stamina <= 200)
+            {
+                stamina += 1;
+            }
+            if(stamina > 200)
+            {
+                stamina = 200f;
+            }
+        }
+        if(stamina <= 0f)
+        {
+            moveSpeed = 0f;
+            staminaRecover = recoverTime;
         }
     }
 

@@ -27,6 +27,14 @@ public class MachineGun_Bullet : MonoBehaviour
                 enemy.DamageStrongEnemy(damage);
             }
         }
+        else if (hitInfo.gameObject.GetComponent<Ranged_Enemy>())
+        {
+            Ranged_Enemy enemy = hitInfo.transform.GetComponent<Ranged_Enemy>();
+            if (enemy != null)
+            {
+                enemy.DamageRangedEnemy(damage);
+            }
+        }
         Destroy(gameObject);
     }
 

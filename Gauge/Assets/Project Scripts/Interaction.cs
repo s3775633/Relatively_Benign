@@ -10,55 +10,58 @@ public class Interaction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        bool weapon = other.GetComponent<InteractionObject>().weapon;
-        bool add = false;
-        if (weapon)
+        if (other.name != "Ranged_Enemy_Bullet(Clone)")
         {
-            GameObject[] weaponInventory = GetComponent<Inventory>().weaponInventory;
-            for (int x = 0; x < weaponInventory.Length; x++)
+            bool weapon = other.GetComponent<InteractionObject>().weapon;
+            bool add = false;
+            if (weapon)
             {
-                if (weaponInventory[x] == null)
+                GameObject[] weaponInventory = GetComponent<Inventory>().weaponInventory;
+                for (int x = 0; x < weaponInventory.Length; x++)
                 {
-                    add = true;
-                    break;
+                    if (weaponInventory[x] == null)
+                    {
+                        add = true;
+                        break;
+                    }
+                }
+                for (int x = 0; x < weaponInventory.Length; x++)
+                {
+                    if (weaponInventory[x] != null)
+                    {
+                        if (weaponInventory[x].GetComponent<InteractionObject>().type == other.GetComponent<InteractionObject>().type)
+                        {
+                            add = false;
+                            break;
+                        }
+                    }
                 }
             }
-            for (int x = 0; x < weaponInventory.Length; x++)
+            else
             {
-                if (weaponInventory[x] != null)
+                GameObject[] itemInventory = GetComponent<Inventory>().itemInventory;
+                for (int x = 0; x < itemInventory.Length; x++)
                 {
-                    if (weaponInventory[x].GetComponent<InteractionObject>().type == other.GetComponent<InteractionObject>().type)
+                    if (itemInventory[x] == null)
                     {
-                        add = false;
+                        add = true;
                         break;
                     }
                 }
             }
-        }
-        else
-        {
-            GameObject[] itemInventory = GetComponent<Inventory>().itemInventory;
-            for (int x = 0; x < itemInventory.Length; x++)
+            if (add)
             {
-                if (itemInventory[x] == null)
+                if (other.CompareTag("Interactive_Object"))
                 {
-                    add = true;
-                    break;
+                    currentObject = other.gameObject;
+                    currentInterObjScript = currentObject.GetComponent<InteractionObject>();
                 }
+                inTrigger = true;
             }
-        }
-        if (add)
-        {
-            if (other.CompareTag("Interactive_Object"))
+            else
             {
-                currentObject = other.gameObject;
-                currentInterObjScript = currentObject.GetComponent<InteractionObject>();
+                inTrigger = false;
             }
-            inTrigger = true;
-        }
-        else
-        {
-            inTrigger = false;
         }
     }
 
