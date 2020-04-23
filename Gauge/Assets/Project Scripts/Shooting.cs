@@ -20,12 +20,13 @@ public class Shooting : MonoBehaviour
         weapon = GetComponent<Inventory>().currentWeapon;
         if (weapon)
         {
+            string weaponType = weapon.GetComponent<InteractionObject>().type.ToString();
             if (nextFire > 0)
             {
                 nextFire -= Time.deltaTime;
                 return;
             }
-            if (weapon.name == "Pistol")
+            if (weaponType == "Pistol")
             {
                 fireRate = 0.5f;
                 if (Input.GetButtonDown("Fire1"))
@@ -33,7 +34,7 @@ public class Shooting : MonoBehaviour
                     ShootPistol();
                 }
             }
-            else if (weapon.name == "Shotgun")
+            else if (weaponType == "Shotgun")
             {
                 fireRate = 1.5f;
                 if (Input.GetButtonDown("Fire1"))
@@ -41,7 +42,7 @@ public class Shooting : MonoBehaviour
                     ShootShotgun();
                 }
             }
-            else if (weapon.name == "Rifle")
+            else if (weaponType == "Rifle")
             {
                 fireRate = 2f;
                 if (Input.GetButtonDown("Fire1"))
@@ -49,7 +50,7 @@ public class Shooting : MonoBehaviour
                     ShootRifle();
                 }
             }
-            else if (weapon.name == "Machine Gun")
+            else if (weaponType == "MachineGun")
             {
                 fireRate = 0.1f;
                 if (Input.GetButton("Fire1"))

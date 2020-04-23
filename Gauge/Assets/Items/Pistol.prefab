@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3106962180178346199}
   - component: {fileID: 3106962180178346196}
   - component: {fileID: 3106962180178346197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pistol
   m_TagString: Interactive_Object
   m_Icon: {fileID: 0}
@@ -113,3 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: 1
+  weapon: 1
+  type: 0

@@ -8,14 +8,12 @@ public class Inventory : MonoBehaviour
     public GameObject[] itemInventory = new GameObject[2];
     public GameObject currentWeapon = null;
     public GameObject currentItem = null;
-
-    void Start()
-    {
-    }
+    public Transform player;
     
     public void AddItem(GameObject item)
     {
-        if (item.name == "Pistol" || item.name == "Shotgun" || item.name == "Rifle" || item.name == "Machine Gun")
+        string weaponType = item.GetComponent<InteractionObject>().type.ToString();
+        if (weaponType == "Pistol" || weaponType == "Shotgun" || weaponType == "Rifle" || weaponType == "MachineGun")
         {
             if (SearchWeaponInventory(item))
             {
@@ -48,7 +46,41 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    
+    public void DropWeapon()
+    {
+        if(currentWeapon)
+        {
+            for(int x = 0; x < weaponInventory.Length; x++)
+            {
+                if(currentWeapon == weaponInventory[x])
+                {
+                    weaponInventory[x] = null;
+                    currentWeapon.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
+                    currentWeapon.SetActive(true);
+                    break;
+                }
+            }
+        }
+    }
 
+    public void DropItem()
+    {
+        if (currentItem)
+        {
+            for (int x = 0; x < itemInventory.Length; x++)
+            {
+                if (currentItem == itemInventory[x])
+                {
+                    itemInventory[x] = null;
+                    GameObject droppedItem = Instantiate(currentItem, player.position, player.rotation);
+                    currentItem.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
+                    currentItem.SetActive(true);
+                    break;
+                }
+            }
+        }
+    }
 
     public bool SearchWeaponInventory(GameObject item)
     {
@@ -110,6 +142,14 @@ public class Inventory : MonoBehaviour
             {
                 currentItem = itemInventory[1];
             }
-        }      
+        }
+        if (Input.GetButtonDown("r"))
+        {
+            DropWeapon();
+        }
+        if (Input.GetButtonDown("t"))
+        {
+            DropItem();
+        }
     }
 }

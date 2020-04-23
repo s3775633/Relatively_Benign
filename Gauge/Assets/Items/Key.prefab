@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7426095273461621132}
   - component: {fileID: 7426095273461621131}
   - component: {fileID: 7426095273461621130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Key
   m_TagString: Interactive_Object
   m_Icon: {fileID: 0}
@@ -113,3 +113,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: 1
+  type: 4

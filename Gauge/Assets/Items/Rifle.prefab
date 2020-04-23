@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4106295309540158374}
   - component: {fileID: 4106295309540158373}
   - component: {fileID: 4106295309540158372}
-  m_Layer: 0
-  m_Name: Rfile
+  m_Layer: 8
+  m_Name: Rifle
   m_TagString: Interactive_Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,3 +114,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: 1
   weapon: 1
+  type: 3

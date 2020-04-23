@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8387068376959445378}
   - component: {fileID: 8387068376959445379}
   - component: {fileID: 8387068376959445381}
-  - component: {fileID: 8387068376959445380}
-  m_Layer: 0
+  - component: {fileID: -8089662004069213300}
+  m_Layer: 8
   m_Name: Shotgun
   m_TagString: Interactive_Object
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!114 &8387068376959445380
+--- !u!114 &-8089662004069213300
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,3 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: 1
+  weapon: 1
+  type: 1
