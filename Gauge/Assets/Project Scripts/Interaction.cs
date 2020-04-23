@@ -62,6 +62,12 @@ public class Interaction : MonoBehaviour
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        currentInterObjScript = null;
+        currentObject = null;
+    }
+
     void Update()
     {
         if (inTrigger && Input.GetButtonDown("e"))
