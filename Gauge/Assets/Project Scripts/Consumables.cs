@@ -64,7 +64,7 @@ public class Consumables : MonoBehaviour
 
     public void UseStamina(GameObject item)
     {
-        GetComponent<Player_Movement>().stamina = 200;
+        GetComponent<Player_Movement>().stamina = 2;
         GameObject[] inventory = GetComponent<Inventory>().itemInventory;
         for (int x = 0; x < inventory.Length; x++)
         {
