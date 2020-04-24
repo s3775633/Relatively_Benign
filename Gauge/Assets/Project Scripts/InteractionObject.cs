@@ -14,6 +14,7 @@ public class InteractionObject : MonoBehaviour
         Rifle,
         Key,
         Health,
+        Stamina,
     }
     public itemType type;
 }
