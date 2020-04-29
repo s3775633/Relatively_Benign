@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 054f5e15b37986b459361e7db28bde58
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -69839966518377697
+    second: Char_01_WalkSpriteEmpty_0
+  - first:
+      213: -2884245356185220636
+    second: Char_01_WalkSpriteEmpty_1
+  - first:
+      213: 6249765282039938066
+    second: Char_01_WalkSpriteEmpty_2
+  - first:
+      213: 5997793715826859146
+    second: Char_01_WalkSpriteEmpty_3
+  - first:
+      213: 6929863758407726512
+    second: Char_01_WalkSpriteEmpty_4
+  - first:
+      213: -2512858690586165636
+    second: Char_01_WalkSpriteEmpty_5
+  - first:
+      213: -7577934779449757951
+    second: Char_01_WalkSpriteEmpty_6
+  - first:
+      213: -3494022907013870523
+    second: Char_01_WalkSpriteEmpty_7
+  - first:
+      213: -7886384590787229393
+    second: Char_01_WalkSpriteEmpty_8
+  - first:
+      213: 6020769201180178213
+    second: Char_01_WalkSpriteEmpty_9
+  - first:
+      213: -2282757619154963606
+    second: Char_01_WalkSpriteEmpty_10
+  - first:
+      213: -1845995070552799576
+    second: Char_01_WalkSpriteEmpty_11
+  - first:
+      213: -7944909150793501210
+    second: Char_01_WalkSpriteEmpty_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +79,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +110,105 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Char_01_WalkSpriteEmpty_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 47
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ebbd8a558802dd0800000000000000
+      internalID: -2512858690586165636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkSpriteEmpty_8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 50
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f294300affeed8290800000000000000
+      internalID: -7886384590787229393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkSpriteEmpty_9
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 28
+        width: 132
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527f4f660b11e8350800000000000000
+      internalID: 6020769201180178213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_WalkSpriteEmpty_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 25
+        width: 150
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5f336a8330eb190800000000000000
+      internalID: -7944909150793501210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

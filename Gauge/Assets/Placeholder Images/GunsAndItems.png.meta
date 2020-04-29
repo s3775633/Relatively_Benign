@@ -38,6 +38,75 @@ TextureImporter:
   - first:
       213: -2389830733300076771
     second: GunsAndItems_11
+  - first:
+      213: -454861479432444546
+    second: GunsAndItems_0
+  - first:
+      213: -7088858144024109234
+    second: GunsAndItems_1
+  - first:
+      213: 4266311975597341546
+    second: GunsAndItems_2
+  - first:
+      213: -8599459203143612242
+    second: GunsAndItems_3
+  - first:
+      213: -4225492169685659079
+    second: GunsAndItems_4
+  - first:
+      213: 2542589414441324820
+    second: GunsAndItems_5
+  - first:
+      213: -5300347671992418299
+    second: GunsAndItems_7
+  - first:
+      213: 571017857556809164
+    second: GunsAndItems_8
+  - first:
+      213: 5443274336367705035
+    second: GunsAndItems_9
+  - first:
+      213: -3902578427922808591
+    second: GunsAndItems_10
+  - first:
+      213: 689354796782798201
+    second: GunsAndItems_11
+  - first:
+      213: 8033092973025764044
+    second: Items_0
+  - first:
+      213: 4337684191699249041
+    second: Items_1
+  - first:
+      213: -488721925442295091
+    second: Items_2
+  - first:
+      213: -7573354855677281409
+    second: Items_3
+  - first:
+      213: 1801263428120863714
+    second: Items_4
+  - first:
+      213: -5971942374765049077
+    second: Items_5
+  - first:
+      213: 4639506938558671751
+    second: Items_6
+  - first:
+      213: -6099050445329199328
+    second: Items_7
+  - first:
+      213: -7855203551248514480
+    second: Items_8
+  - first:
+      213: -2064859774160998932
+    second: Items_9
+  - first:
+      213: -3694533877916086887
+    second: Items_10
+  - first:
+      213: 2029542551908640097
+    second: Items_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:

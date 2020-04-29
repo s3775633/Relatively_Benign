@@ -9,7 +9,15 @@ public class Inventory : MonoBehaviour
     public GameObject currentWeapon = null;
     public GameObject currentItem = null;
     public Transform player;
-    
+    public SpriteRenderer weaponsr1;
+    public SpriteRenderer weaponsr2;
+    public SpriteRenderer weaponsr3;
+    public SpriteRenderer itemsr1;
+    public SpriteRenderer itemsr2;
+    public Sprite[] weaponSprites;
+    public Sprite[] itemSprites;
+   
+
     public void AddItem(GameObject item)
     {
         string weaponType = item.GetComponent<InteractionObject>().type.ToString();
@@ -22,6 +30,63 @@ public class Inventory : MonoBehaviour
                     if (weaponInventory[x] == null)
                     {
                         weaponInventory[x] = item;
+                        if(x == 0)
+                        {
+                            if(weaponType == "Pistol")
+                            {
+                                weaponsr1.sprite = weaponSprites[0];
+                            }
+                            else if (weaponType == "Shotgun")
+                            {
+                                weaponsr1.sprite = weaponSprites[1];
+                            }
+                            else if (weaponType == "MachineGun")
+                            {
+                                weaponsr1.sprite = weaponSprites[2];
+                            }
+                            else if (weaponType == "Rifle")
+                            {
+                                weaponsr1.sprite = weaponSprites[3];
+                            }
+                        }
+                        else if (x == 1)
+                        {
+                            if (weaponType == "Pistol")
+                            {
+                                weaponsr2.sprite = weaponSprites[0];
+                            }
+                            else if (weaponType == "Shotgun")
+                            {
+                                weaponsr2.sprite = weaponSprites[1];
+                            }
+                            else if (weaponType == "MachineGun")
+                            {
+                                weaponsr2.sprite = weaponSprites[2];
+                            }
+                            else if (weaponType == "Rifle")
+                            {
+                                weaponsr2.sprite = weaponSprites[3];
+                            }
+                        }
+                        else if (x == 2)
+                        {
+                            if (weaponType == "Pistol")
+                            {
+                                weaponsr3.sprite = weaponSprites[0];
+                            }
+                            else if (weaponType == "Shotgun")
+                            {
+                                weaponsr3.sprite = weaponSprites[1];
+                            }
+                            else if (weaponType == "MachineGun")
+                            {
+                                weaponsr3.sprite = weaponSprites[2];
+                            }
+                            else if (weaponType == "Rifle")
+                            {
+                                weaponsr3.sprite = weaponSprites[3];
+                            }
+                        }
                         currentWeapon = item;
                         Debug.Log(item.name + " was Added");
                         break;
@@ -37,6 +102,36 @@ public class Inventory : MonoBehaviour
                 {
                     if (itemInventory[x] == null)
                     {
+                        if (x == 0)
+                        {
+                            if (weaponType == "Health")
+                            {
+                                itemsr1.sprite = itemSprites[0];
+                            }
+                            else if (weaponType == "Stamina")
+                            {
+                                itemsr1.sprite = itemSprites[1];
+                            }
+                            else if (weaponType == "Key")
+                            {
+                                itemsr1.sprite = itemSprites[2];
+                            }
+                        }
+                        else if (x == 1)
+                        {
+                            if (weaponType == "Health")
+                            {
+                                itemsr2.sprite = itemSprites[0];
+                            }
+                            else if (weaponType == "Stamina")
+                            {
+                                itemsr2.sprite = itemSprites[1];
+                            }
+                            else if (weaponType == "Key")
+                            {
+                                itemsr2.sprite = itemSprites[2];
+                            }
+                        }
                         itemInventory[x] = item;
                         currentItem = item;
                         Debug.Log(item.name + " was Added");
@@ -55,6 +150,18 @@ public class Inventory : MonoBehaviour
             {
                 if(currentWeapon == weaponInventory[x])
                 {
+                    if(x == 0)
+                    {
+                        weaponsr1.sprite = null;
+                    }
+                    else if (x == 1)
+                    {
+                        weaponsr2.sprite = null;
+                    }
+                    else if (x == 2)
+                    {
+                        weaponsr3.sprite = null;
+                    }
                     weaponInventory[x] = null;
                     currentWeapon.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
                     currentWeapon.SetActive(true);
@@ -72,6 +179,14 @@ public class Inventory : MonoBehaviour
             {
                 if (currentItem == itemInventory[x])
                 {
+                    if (x == 0)
+                    {
+                        itemsr1.sprite = null;
+                    }
+                    else if (x == 1)
+                    {
+                        itemsr2.sprite = null;
+                    }
                     itemInventory[x] = null;
                     GameObject droppedItem = Instantiate(currentItem, player.position, player.rotation);
                     currentItem.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
