@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
     void DiePlayer()
     {
+        healthBar.value = 0;
         Destroy(gameObject);
     }
 

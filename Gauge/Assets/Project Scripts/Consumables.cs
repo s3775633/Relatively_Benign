@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Consumables : MonoBehaviour
 {
     private GameObject item;
+    public SpriteRenderer[] itemsr;
+    public Image[] imageItem;
 
     void Update()
     {
@@ -47,8 +50,20 @@ public class Consumables : MonoBehaviour
                 if (inventory[x].name == item.name)
                 {
                     inventory[x] = null;
+                    itemsr[x].sprite = null;
+                    imageItem[x].enabled = false;
+                    Destroy(item);
                     break;
                 }
+            }
+        }
+        for (int x = 0; x < inventory.Length; x++)
+        {
+            if (inventory[x] != null)
+            {
+                imageItem[x].enabled = true;
+                item = inventory[x];
+                break;
             }
         }
         GetComponent<Inventory>().currentItem = null;
@@ -73,8 +88,20 @@ public class Consumables : MonoBehaviour
                 if (inventory[x].name == item.name)
                 {
                     inventory[x] = null;
+                    itemsr[x].sprite = null;
+                    imageItem[x].enabled = false;
+                    Destroy(item);
                     break;
                 }
+            }
+        }
+        for (int x = 0; x < inventory.Length; x++)
+        {
+            if (inventory[x] != null)
+            {
+                imageItem[x].enabled = true;
+                item = inventory[x];
+                break;
             }
         }
         GetComponent<Inventory>().currentItem = null;
