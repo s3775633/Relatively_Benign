@@ -39,15 +39,22 @@ public class Rifle_Bullet : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player").transform;
+        if (GameObject.Find("RiflePlayer"))
+        {
+            player = GameObject.Find("RiflePlayer").transform;
+        }
     }
 
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, player.position);
-        if (distance > 30)
+        if (GameObject.Find("RiflePlayer"))
         {
-            Destroy(gameObject);
+            player = GameObject.Find("RiflePlayer").transform;
+            float distance = Vector3.Distance(transform.position, player.position);
+            if (distance > 30)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ public class Player_Movement : MonoBehaviour
     public float stamina = 2f;
 
     public Rigidbody2D rb;
-    public Camera cam;
+    private Camera cam;
     public Animator animator;
 
     private float recoverTime = 5f;
@@ -21,6 +21,11 @@ public class Player_Movement : MonoBehaviour
 
     Vector2 movement;
     Vector2 mousePos;
+
+    void Start()
+    {
+        cam = Camera.main;
+    }
 
     void Update()
     {
