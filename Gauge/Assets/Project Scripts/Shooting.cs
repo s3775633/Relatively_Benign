@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
+    public Animator animator;
     public GameObject Pistol_Bullet;
     public GameObject ShotGun_Bullet;
     public GameObject Rifle_Bullet;

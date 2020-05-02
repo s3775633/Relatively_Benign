@@ -5,6 +5,9 @@ using UnityEngine;
 public class Ranged_Enemy : MonoBehaviour
 {
     public Transform firePoint;
+    public GameObject playerUnarmed;
+    public GameObject playerPistol;
+    public GameObject playerRifle;
     public GameObject ranged_Enemy_Bullet;
     public Transform player;
     private Rigidbody2D rb;
@@ -37,6 +40,9 @@ public class Ranged_Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
+        playerUnarmed = GameObject.Find("Player");
+        playerPistol = GameObject.Find("Player_Pistol");
+        playerRifle = GameObject.Find("RiflePlayer");
         rb = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -44,6 +50,18 @@ public class Ranged_Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerUnarmed.activeSelf)
+        {
+            player = playerUnarmed.transform;
+        }
+        else if (playerPistol.activeSelf)
+        {
+            player = playerPistol.transform;
+        }
+        else if (playerRifle.activeSelf)
+        {
+            player = playerRifle.transform;
+        }
         if (player != null)
         {
             float distance = Vector3.Distance(transform.position, player.position);
@@ -84,7 +102,6 @@ public class Ranged_Enemy : MonoBehaviour
             player.DamagePlayer(attackPower);
         }
     }
-
 
     void FixedUpdate()
     {

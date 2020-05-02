@@ -40,7 +40,10 @@ public class Pistol_bullet : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player").transform;
+        if (GameObject.Find("Player_Pistol"))
+        {
+            player = GameObject.Find("Player_Pistol").transform;
+        }
     }
 
     void Update()

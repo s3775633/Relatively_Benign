@@ -15,6 +15,7 @@ public class InteractionObject : MonoBehaviour
         Key,
         Health,
         Stamina,
+        player,
     }
     public itemType type;
 }
