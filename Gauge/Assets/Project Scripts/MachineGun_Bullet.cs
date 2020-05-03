@@ -40,7 +40,10 @@ public class MachineGun_Bullet : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player").transform;
+        if (GameObject.Find("MachinegunPlayer"))
+        {
+            player = GameObject.Find("MachinegunPlayer").transform;
+        }
     }
 
     void Update()

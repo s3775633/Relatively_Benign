@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: 2870127485291636520
     second: Char_01_MachineWalkSprite_0
+  - first:
+      213: -157343939723958148
+    second: Char_01_MachineWalkSprite_0
+  - first:
+      213: 851437065407800562
+    second: Char_01_MachineWalkSprite_1
+  - first:
+      213: 1871630604018617912
+    second: Char_01_MachineWalkSprite_2
+  - first:
+      213: 7204314440731693136
+    second: Char_01_MachineWalkSprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,10 +105,10 @@ TextureImporter:
       name: Char_01_MachineWalkSprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 864
-        height: 216
+        x: 28
+        y: 29
+        width: 151
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,8 +116,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 827a4e4cdbdb4d720800000000000000
-      internalID: 2870127485291636520
+      spriteID: c78613d358001ddf0800000000000000
+      internalID: -157343939723958148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_MachineWalkSprite_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 14
+        width: 151
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4ab38ff79e0db00800000000000000
+      internalID: 851437065407800562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_MachineWalkSprite_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 29
+        width: 151
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e87473e1e59f910800000000000000
+      internalID: 1871630604018617912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char_01_MachineWalkSprite_3
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 18
+        width: 151
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050970250dddaf360800000000000000
+      internalID: 7204314440731693136
       vertices: []
       indices: 
       edges: []

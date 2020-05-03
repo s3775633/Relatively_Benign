@@ -20,6 +20,7 @@ public class PlayerModelSwitch : MonoBehaviour
         if(currentWeapon && newWeapon != currentWeapon)
         {
             string weaponType = currentWeapon.GetComponent<InteractionObject>().type.ToString();
+            Debug.Log(weaponType);
             if(weaponType == "Pistol")
             {
                 Debug.Log("Pistol");
@@ -27,24 +28,50 @@ public class PlayerModelSwitch : MonoBehaviour
                 PlayerUnarmed.gameObject.SetActive(false);
                 PlayerPistol.gameObject.SetActive(true);
                 PlayerRifle.gameObject.SetActive(false);
+                PlayerShotgun.gameObject.SetActive(false);
+                PlayerMachinegun.gameObject.SetActive(false);
             }
             if (weaponType == "Rifle")
             {
                 Debug.Log("Rifle");
                 ChangeModel(PlayerRifle, currentPlayer);
+                PlayerShotgun.gameObject.SetActive(false);
                 PlayerUnarmed.gameObject.SetActive(false);
                 PlayerPistol.gameObject.SetActive(false);
                 PlayerRifle.gameObject.SetActive(true);
+                PlayerMachinegun.gameObject.SetActive(false);
+            }
+            if (weaponType == "Shotgun")
+            {
+                Debug.Log("Shotgun");
+                ChangeModel(PlayerShotgun, currentPlayer);
+                PlayerShotgun.gameObject.SetActive(true);
+                PlayerUnarmed.gameObject.SetActive(false);
+                PlayerPistol.gameObject.SetActive(false);
+                PlayerRifle.gameObject.SetActive(false);
+                PlayerMachinegun.gameObject.SetActive(false);
+            }
+            if (weaponType == "MachineGun")
+            {
+                Debug.Log("Machine");
+                ChangeModel(PlayerMachinegun, currentPlayer);
+                PlayerShotgun.gameObject.SetActive(false);
+                PlayerUnarmed.gameObject.SetActive(false);
+                PlayerPistol.gameObject.SetActive(false);
+                PlayerRifle.gameObject.SetActive(false);
+                PlayerMachinegun.gameObject.SetActive(true);
             }
             newWeapon = currentWeapon;
         }
-        if(!currentWeapon)
+        if(!currentWeapon && newWeapon != currentWeapon)
         {
             Debug.Log("Unarmed");
             ChangeModel(PlayerUnarmed, currentPlayer);
             PlayerUnarmed.gameObject.SetActive(true);
             PlayerPistol.gameObject.SetActive(false);
             PlayerRifle.gameObject.SetActive(false);
+            PlayerShotgun.gameObject.SetActive(false);
+            PlayerMachinegun.gameObject.SetActive(false);
             newWeapon = null;
         }
     }
@@ -68,6 +95,7 @@ public class PlayerModelSwitch : MonoBehaviour
         playerNew.GetComponent<Consumables>().imageItem = playerCurrent.GetComponent<Consumables>().imageItem;  
         playerNew.GetComponent<StaminaGauge>().needleGauge = playerCurrent.GetComponent<StaminaGauge>().needleGauge;
         playerNew.GetComponent<Player_Movement>().stamina = playerCurrent.GetComponent<Player_Movement>().stamina;
+        playerNew.GetComponent<Player_Movement>().timer = playerCurrent.GetComponent<Player_Movement>().timer;
         playerNew.GetComponent<Player>().healthBar = playerCurrent.GetComponent<Player>().healthBar;
         playerNew.GetComponent<Player>().health = playerCurrent.GetComponent<Player>().health;
         playerNew.GetComponent<Shooting>().Pistol_Bullet = playerCurrent.GetComponent<Shooting>().Pistol_Bullet;

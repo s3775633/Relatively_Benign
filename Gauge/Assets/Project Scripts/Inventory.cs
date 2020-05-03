@@ -19,14 +19,6 @@ public class Inventory : MonoBehaviour
    
     void Start()
     {
-        if (imageWeapon[0])
-        {
-            imageWeapon[0].enabled = false;
-            imageWeapon[1].enabled = false;
-            imageWeapon[2].enabled = false;
-            imageItem[0].enabled = false;
-            imageItem[1].enabled = false;
-        }
     }
 
     public void AddItem(GameObject item)

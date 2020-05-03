@@ -8,6 +8,8 @@ public class Ranged_Enemy : MonoBehaviour
     public GameObject playerUnarmed;
     public GameObject playerPistol;
     public GameObject playerRifle;
+    public GameObject playerShotgun;
+    public GameObject playerMachine;
     public GameObject ranged_Enemy_Bullet;
     public Transform player;
     private Rigidbody2D rb;
@@ -43,6 +45,8 @@ public class Ranged_Enemy : MonoBehaviour
         playerUnarmed = GameObject.Find("Player");
         playerPistol = GameObject.Find("Player_Pistol");
         playerRifle = GameObject.Find("RiflePlayer");
+        playerShotgun = GameObject.Find("ShotgunPlayer");
+        playerMachine = GameObject.Find("MachinegunPlayer");
         rb = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -61,6 +65,14 @@ public class Ranged_Enemy : MonoBehaviour
         else if (playerRifle.activeSelf)
         {
             player = playerRifle.transform;
+        }
+        else if (playerShotgun.activeSelf)
+        {
+            player = playerShotgun.transform;
+        }
+        else if (playerMachine.activeSelf)
+        {
+            player = playerMachine.transform;
         }
         if (player != null)
         {

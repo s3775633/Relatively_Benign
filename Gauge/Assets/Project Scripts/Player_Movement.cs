@@ -16,7 +16,7 @@ public class Player_Movement : MonoBehaviour
     private float recoverTime = 5f;
     private float depleteTimeRun = 3f;
     private float depleteTimeWalk = 7f;
-    private float timer = 3f;
+    public float timer = 3f;
     private float timeToWait = 3f;
 
     Vector2 movement;

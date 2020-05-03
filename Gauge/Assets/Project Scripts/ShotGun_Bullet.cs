@@ -40,15 +40,22 @@ public class ShotGun_Bullet : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player").transform;
+        if (GameObject.Find("ShotgunPlayer"))
+        {
+            player = GameObject.Find("ShotgunPlayer").transform;
+        }
     }
 
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, player.position);
-        if (distance > 8)
+        if (GameObject.Find("ShotgunPlayer"))
         {
-            Destroy(gameObject);
+            player = GameObject.Find("ShotgunPlayer").transform;
+            float distance = Vector3.Distance(transform.position, player.position);
+            if (distance > 8)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -7,6 +7,8 @@ public class CameraController : MonoBehaviour
     public GameObject player;
     public GameObject riflePlayer;
     public GameObject pistolPlayer;
+    public GameObject shotgunPlayer;
+    public GameObject machinegunPlayer;
     private Vector3 offset;
 
     // Start is called before the first frame update
@@ -29,6 +31,14 @@ public class CameraController : MonoBehaviour
         else if (pistolPlayer.activeSelf)
         {
             transform.position = pistolPlayer.transform.position + offset;
+        }
+        else if (shotgunPlayer.activeSelf)
+        {
+            transform.position = shotgunPlayer.transform.position + offset;
+        }
+        else if (machinegunPlayer.activeSelf)
+        {
+            transform.position = machinegunPlayer.transform.position + offset;
         }
     }
 
