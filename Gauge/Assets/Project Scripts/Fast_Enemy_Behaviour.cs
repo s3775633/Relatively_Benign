@@ -102,10 +102,10 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveCharacter(movement);
+        MoveCharacter(movement);
     }
 
-    void moveCharacter(Vector2 direction)
+    void MoveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
