@@ -20,23 +20,29 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (player.activeSelf)
+		player = GameObject.Find("Player");
+		riflePlayer = GameObject.Find("RiflePlayer");
+		pistolPlayer = GameObject.Find("Player_Pistol");
+		shotgunPlayer = GameObject.Find("ShotgunPlayer");
+		machinegunPlayer = GameObject.Find("MachinegunPlayer");
+	
+        if (player != null)
         {
             transform.position = player.transform.position + offset;
         }
-        else if (riflePlayer.activeSelf)
+        else if (riflePlayer != null)
         {
             transform.position = riflePlayer.transform.position + offset;
         }
-        else if (pistolPlayer.activeSelf)
+        else if (pistolPlayer != null)
         {
             transform.position = pistolPlayer.transform.position + offset;
         }
-        else if (shotgunPlayer.activeSelf)
+        else if (shotgunPlayer != null)
         {
             transform.position = shotgunPlayer.transform.position + offset;
         }
-        else if (machinegunPlayer.activeSelf)
+        else if (machinegunPlayer != null)
         {
             transform.position = machinegunPlayer.transform.position + offset;
         }

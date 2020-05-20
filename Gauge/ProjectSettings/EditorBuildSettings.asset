@@ -10,17 +10,20 @@ EditorBuildSettings:
     guid: feed1a9ee2406f649ab70260fc5456d0
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+    guid: c71800b6326d26245a6c1c2acd016d5b
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/ChoosePipe1.unity
     guid: 6f70e1e5587b9b842b7a0d63f6b9c42a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PipeCircuit2.unity
     guid: 5a5e7b0fd37be1d4ca5646b049ad0277
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PipeCircuit1.unity
     guid: 218337baa8c386446a04a5996ebf5c9b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ChoosePipe2.unity
     guid: 57fbf998dc79375448f52167017ef6cb
   m_configObjects: {}

@@ -26,35 +26,33 @@ public class Ranged_Enemy_Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Start()
-    {
-        playerUnarmed = GameObject.Find("Player");
-        playerPistol = GameObject.Find("Player_Pistol");
-        playerRifle = GameObject.Find("RiflePlayer");
-        playerShotgun = GameObject.Find("ShotgunPlayer");
-        playerMachine = GameObject.Find("MachinePlayer");
-    }
+    void Start(){}
 
     void Update()
     {
+		playerUnarmed = GameObject.Find("Player");
+        playerPistol = GameObject.Find("Player_Pistol");
+        playerRifle = GameObject.Find("RiflePlayer");
+        playerShotgun = GameObject.Find("ShotgunPlayer");
+        playerMachine = GameObject.Find("MachinegunPlayer");
 
-        if (playerUnarmed)
+        if (playerUnarmed != null)
         {
             player = playerUnarmed.transform;
         }
-        else if (playerPistol)
+        else if (playerPistol != null)
         {
             player = playerPistol.transform;
         }
-        else if (playerRifle)
+        else if (playerRifle != null)
         {
             player = playerRifle.transform;
         }
-        else if (playerShotgun)
+        else if (playerShotgun != null)
         {
             player = playerShotgun.transform;
         }
-        else if (playerMachine)
+        else if (playerMachine != null)
         {
             player = playerMachine.transform;
         }
