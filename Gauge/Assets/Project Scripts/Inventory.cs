@@ -16,7 +16,10 @@ public class Inventory : MonoBehaviour
     public Image[] imageItem;
     public Sprite[] weaponSprites;
     public Sprite[] itemSprites;
-   
+    
+    [SerializeField] private AudioClip key;
+
+
     void Start()
     {
     }
@@ -83,6 +86,7 @@ public class Inventory : MonoBehaviour
                         else if (weaponType == "Key")
                         {
                             itemsr[x].sprite = itemSprites[2];
+                            AudioManager.Instance.PlaySFX(key);
                         }
                         imageItem[x].enabled = true;
                         itemInventory[x] = item;

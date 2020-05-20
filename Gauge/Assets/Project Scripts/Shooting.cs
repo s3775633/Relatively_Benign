@@ -16,6 +16,11 @@ public class Shooting : MonoBehaviour
     private float fireRate;
     private float nextFire = -1f;
 
+    [SerializeField] private AudioClip pistolSound;
+    [SerializeField] private AudioClip shotGunSound;
+    [SerializeField] private AudioClip rifleSound;
+    [SerializeField] private AudioClip machineGunSound;
+
     void Update()
     {
         weapon = GetComponent<Inventory>().currentWeapon;
@@ -33,6 +38,7 @@ public class Shooting : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     ShootPistol();
+                    AudioManager.Instance.PlaySFX(pistolSound);
                 }
             }
             else if (weaponType == "Shotgun")
@@ -41,6 +47,7 @@ public class Shooting : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     ShootShotgun();
+                    AudioManager.Instance.PlaySFX(shotGunSound);
                 }
             }
             else if (weaponType == "Rifle")
@@ -49,6 +56,7 @@ public class Shooting : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     ShootRifle();
+                    AudioManager.Instance.PlaySFX(rifleSound);
                 }
             }
             else if (weaponType == "MachineGun")
@@ -57,6 +65,7 @@ public class Shooting : MonoBehaviour
                 if (Input.GetButton("Fire1"))
                 {
                     ShootMachineGun();
+                    AudioManager.Instance.PlaySFX(machineGunSound);
                 }
             }
         }

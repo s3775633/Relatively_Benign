@@ -93,6 +93,7 @@ MonoBehaviour:
   rb: {fileID: 1842653062959674162}
   animator: {fileID: 1842653062959674161}
   timer: 3
+  speedBoost: {fileID: 8300000, guid: b79bc593ceb603c45bb9ebe5a2bc7a2f, type: 3}
 --- !u!212 &1842653062959674163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -244,6 +245,7 @@ MonoBehaviour:
   - {fileID: 1801263428120863714, guid: 52efbd40bbf4629498e40f3d5a263fda, type: 3}
   - {fileID: -5971942374765049077, guid: 52efbd40bbf4629498e40f3d5a263fda, type: 3}
   - {fileID: 2029542551908640097, guid: 52efbd40bbf4629498e40f3d5a263fda, type: 3}
+  key: {fileID: 8300000, guid: 4f790dfd6b6f0e94893e586850c8bc51, type: 3}
 --- !u!114 &1842653062959674126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +331,10 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 0}
   bulletForce: 20
+  pistolSound: {fileID: 8300000, guid: 662b96ce6b05dfe4499b35f51edf919f, type: 3}
+  shotGunSound: {fileID: 8300000, guid: 5f1314914b48e684ea0a6e94f3d74b3d, type: 3}
+  rifleSound: {fileID: 8300000, guid: 61c91bb6b9c25ff4ebbf18888f5753d4, type: 3}
+  machineGunSound: {fileID: 8300000, guid: c8ee4332594674c47a62c6dda7a34007, type: 3}
 --- !u!114 &1842653062959674121
 MonoBehaviour:
   m_ObjectHideFlags: 0

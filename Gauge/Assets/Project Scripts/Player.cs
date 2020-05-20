@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public float health = 300;
     public Slider healthBar;
+    [SerializeField] private AudioClip playerDeath;
 
     public void DamagePlayer(int damage)
     {
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     void DiePlayer()
     {
         healthBar.value = 0;
+        AudioManager.Instance.PlaySFX(playerDeath);
         Destroy(gameObject);
     }
 

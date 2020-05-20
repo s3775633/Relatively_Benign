@@ -19,6 +19,8 @@ public class Player_Movement : MonoBehaviour
     public float timer = 3f;
     private float timeToWait = 3f;
 
+    [SerializeField] private AudioClip speedBoost;
+
     Vector2 movement;
     Vector2 mousePos;
 
@@ -41,6 +43,7 @@ public class Player_Movement : MonoBehaviour
             if (Input.GetButton("Space"))
             {
                 moveSpeed = 10f;
+                AudioManager.Instance.PlaySFX(speedBoost);
             }
             else
             {
