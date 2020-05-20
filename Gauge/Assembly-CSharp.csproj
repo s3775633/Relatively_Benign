@@ -55,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioManager.cs" />
+     <Compile Include="Assets\AudioManagerTester.cs" />
      <Compile Include="Assets\Project Scripts\AxeTrap.cs" />
      <Compile Include="Assets\Project Scripts\BladeTrap.cs" />
      <Compile Include="Assets\Project Scripts\CameraController.cs" />
