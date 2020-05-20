@@ -35,6 +35,13 @@ public class Rifle_Bullet : MonoBehaviour
                 enemy.DamageRangedEnemy(damage);
             }
         }
+		else if (hitInfo.name == "Walls"){
+			Destroy(gameObject);
+		}
+		
+		else if (hitInfo.CompareTag("Door")){
+			Destroy(gameObject);
+		}
     }
 
     void Start()

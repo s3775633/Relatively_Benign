@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -91,16 +92,16 @@ public class PuzzleManager : MonoBehaviour
 	public void WinCheck()
 	{
 		if(puzzle.pieces [5,2].piperotation == 0){
-			if(puzzle.pieces [5,1].piperotation == 0|| puzzle.pieces [5,1].piperotation == 180){
-				if(puzzle.pieces [5,0].piperotation == 90 || puzzle.pieces [5,0].piperotation == 180){
-					if(puzzle.pieces [4,0].piperotation == 90 || puzzle.pieces [4,0].piperotation == 270){
-						if(puzzle.pieces [3,0].piperotation == 0 || puzzle.pieces [3,0].piperotation == 90){
-							if(puzzle.pieces [3,1].piperotation == 270){
-								if(puzzle.pieces [2,2].piperotation == 270){
-									if(puzzle.pieces [1,2].piperotation == 0){
-										if(puzzle.pieces [1,1].piperotation == 180){
-											if(puzzle.pieces [0,1].piperotation == 0 || puzzle.pieces [0,1].piperotation == 90){
-												if(puzzle.pieces [0,2].piperotation == 270){
+		if(puzzle.pieces [5,1].piperotation == 0|| puzzle.pieces [5,1].piperotation == 180){
+		if(puzzle.pieces [5,0].piperotation == 90 || puzzle.pieces [5,0].piperotation == 180){
+		if(puzzle.pieces [4,0].piperotation == 90 || puzzle.pieces [4,0].piperotation == 270){
+		if(puzzle.pieces [3,0].piperotation == 0 || puzzle.pieces [3,0].piperotation == 90){
+		if(puzzle.pieces [3,1].piperotation == 270){
+		if(puzzle.pieces [2,2].piperotation == 270){
+		if(puzzle.pieces [1,2].piperotation == 0){
+		if(puzzle.pieces [1,1].piperotation == 180){
+		if(puzzle.pieces [0,1].piperotation == 0 || puzzle.pieces [0,1].piperotation == 90){
+		if(puzzle.pieces [0,2].piperotation == 270){
 													Debug.Log("Winner");
 													Complete();
 												}
@@ -120,10 +121,5 @@ public class PuzzleManager : MonoBehaviour
 	public void Complete()
 	{
 		canvas.SetActive (true);
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

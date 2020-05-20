@@ -26,15 +26,8 @@ public class SpikeTrap : MonoBehaviour
     {
         triggered = this.GetComponent<Collider2D>();
         animator = this.GetComponent<Animator>();
-
-        playerUnarmed = GameObject.Find("Player");
-        playerPistol = GameObject.Find("Player_Pistol");
-        playerRifle = GameObject.Find("RiflePlayer");
-        playerShotgun = GameObject.Find("ShotgunPlayer");
-        playerMachine = GameObject.Find("MachinegunPlayer");
         player = GameObject.Find("Player").transform;
-
-
+		
         spike_trap_audio = this.GetComponent<AudioSource>();
         activated = false;
         hit = false;
@@ -43,25 +36,31 @@ public class SpikeTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		playerUnarmed = GameObject.Find("Player");
+        playerPistol = GameObject.Find("Player_Pistol");
+        playerRifle = GameObject.Find("RiflePlayer");
+        playerShotgun = GameObject.Find("ShotgunPlayer");
+        playerMachine = GameObject.Find("MachinegunPlayer");
+		
         timeTillSpike -= Time.deltaTime;
         
-        if (playerUnarmed.activeSelf)
+        if (playerUnarmed != null)
         {
             player = playerUnarmed.transform;
         }
-        else if (playerPistol.activeSelf)
+        else if (playerPistol != null)
         {
             player = playerPistol.transform;
         }
-        else if (playerRifle.activeSelf)
+        else if (playerRifle != null)
         {
             player = playerRifle.transform;
         }
-        else if (playerShotgun.activeSelf)
+        else if (playerShotgun != null)
         {
             player = playerShotgun.transform;
         }
-        else if (playerMachine.activeSelf)
+        else if (playerMachine != null)
         {
             player = playerMachine.transform;
         }

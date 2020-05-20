@@ -43,11 +43,11 @@ public class Inventory : MonoBehaviour
                         }
                         else if (weaponType == "MachineGun")
                         {
-                            weaponsr[x].sprite = weaponSprites[2];
+                            weaponsr[x].sprite = weaponSprites[3];
                         }
                         else if (weaponType == "Rifle")
                         {
-                            weaponsr[x].sprite = weaponSprites[3];
+                            weaponsr[x].sprite = weaponSprites[2];
                         }
                         imageWeapon[x].enabled = true;
                         currentWeapon = item;

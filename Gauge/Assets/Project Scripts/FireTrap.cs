@@ -31,25 +31,40 @@ public class FireTrap : MonoBehaviour
         animator = this.GetComponent<Animator>();
         trap_fire_audio = this.GetComponent<AudioSource>();
         animator.SetBool("active", false);
-        Debug.Log("Start has been called");
-
-        playerUnarmed = GameObject.Find("Player");
-        Debug.Log("Line 1 called");
-        playerPistol = GameObject.Find("Player_Pistol");
-        Debug.Log("Line 2 called");
-        playerRifle = GameObject.Find("RiflePlayer");
-        Debug.Log("Line 3 called");
-        playerShotgun = GameObject.Find("ShotgunPlayer");
-        playerMachine = GameObject.Find("MachinegunPlayer");
-        player = GameObject.Find("Player").transform;
     }
     
     // Update is called once per frame
     void Update()
     {
+		playerUnarmed = GameObject.Find("Player");
+        playerPistol = GameObject.Find("Player_Pistol");
+        playerRifle = GameObject.Find("RiflePlayer");
+        playerShotgun = GameObject.Find("ShotgunPlayer");
+        playerMachine = GameObject.Find("MachinegunPlayer");
+		
+		if (playerUnarmed != null)
+        {
+            player = playerUnarmed.transform;
+        }
+        else if (playerPistol != null)
+        {
+            player = playerPistol.transform;
+        }
+        else if (playerRifle != null)
+        {
+            player = playerRifle.transform;
+        }
+        else if (playerShotgun != null)
+        {
+            player = playerShotgun.transform;
+        }
+        else if (playerMachine != null)
+        {
+            player = playerMachine.transform;
+        }
+		
         timeleft -= Time.deltaTime;
               
-
         if (trigger_script.activated == true && running == false)
         {
             TrapOn();
@@ -64,28 +79,6 @@ public class FireTrap : MonoBehaviour
         {
             TrapOff();
         }
-
-        if (playerUnarmed.activeSelf)
-        {
-            player = playerUnarmed.transform;
-        }
-        else if (playerPistol.activeSelf)
-        {
-            player = playerPistol.transform;
-        }
-        else if (playerRifle.activeSelf)
-        {
-            player = playerRifle.transform;
-        }
-        else if (playerShotgun.activeSelf)
-        {
-            player = playerShotgun.transform;
-        }
-        else if (playerMachine.activeSelf)
-        {
-            player = playerMachine.transform;
-        }
-
     }
 
     public void TrapOn()

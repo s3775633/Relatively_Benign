@@ -36,11 +36,6 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
 
     void Start()
     {
-        playerUnarmed = GameObject.Find("Player");
-        playerPistol = GameObject.Find("Player_Pistol");
-        playerRifle = GameObject.Find("RiflePlayer");
-        playerShotgun = GameObject.Find("ShotgunPlayer");
-        playerMachine = GameObject.Find("MachinegunPlayer");
         player = GameObject.Find("Player").transform;
         rb = this.GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -49,26 +44,33 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerUnarmed.activeSelf)
+		playerUnarmed = GameObject.Find("Player");
+        playerPistol = GameObject.Find("Player_Pistol");
+        playerRifle = GameObject.Find("RiflePlayer");
+        playerShotgun = GameObject.Find("ShotgunPlayer");
+        playerMachine = GameObject.Find("MachinegunPlayer");
+		
+        if (playerUnarmed != null)
         {
             player = playerUnarmed.transform;
         }
-        else if (playerPistol.activeSelf)
+        else if (playerPistol != null)
         {
             player = playerPistol.transform;
         }
-        else if (playerRifle.activeSelf)
+        else if (playerRifle != null)
         {
             player = playerRifle.transform;
         }
-        else if (playerShotgun.activeSelf)
+        else if (playerShotgun != null)
         {
             player = playerShotgun.transform;
         }
-        else if (playerMachine.activeSelf)
+        else if (playerMachine != null)
         {
             player = playerMachine.transform;
         }
+		
         if (player != null)
         {
             float distance = Vector3.Distance(transform.position, player.position);
@@ -102,10 +104,10 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        MoveCharacter(movement);
+        moveCharacter(movement);
     }
 
-    void MoveCharacter(Vector2 direction)
+    void moveCharacter(Vector2 direction)
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }

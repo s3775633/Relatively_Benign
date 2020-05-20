@@ -7,6 +7,9 @@ TagManager:
   - Interactive_Object
   - Pipe
   - Piece
+  - FallingFloor
+  - Door
+  - Key
   layers:
   - Default
   - TransparentFX

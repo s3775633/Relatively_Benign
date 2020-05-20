@@ -7,19 +7,19 @@ public class FallingFloor : MonoBehaviour
     // Start is called before the first frame update
 
         // set the collision variable
-        public Collider2D triggered;
         public Animator animator;
         public AudioSource falling_trap_audio;
         public bool activated;
+		private bool done;
         public float timer = 1.0f;
 
         // Start is called before the first frame update
         void Start()
         {
-            triggered = this.GetComponent<Collider2D>();
             animator = this.GetComponent<Animator>();
             falling_trap_audio = this.GetComponent<AudioSource>();
             activated = false;
+			done = false;
         }
 
         private void Update()
@@ -29,10 +29,10 @@ public class FallingFloor : MonoBehaviour
                 timer -= Time.deltaTime;
             }
 
-            if (timer <0 )
+            if (timer < 0 )
             {
                 animator.SetBool("active", true);
-                
+				done = true;
             }
         }
 
@@ -42,9 +42,10 @@ public class FallingFloor : MonoBehaviour
             {
                 activated = true;
                 falling_trap_audio.Play();
-
+			}
         }
-        }
-
-        
+		
+		public bool isDone(){
+			return done;
+		}
     }
