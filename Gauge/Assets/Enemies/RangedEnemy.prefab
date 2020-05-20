@@ -130,11 +130,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 674180014724044542}
+  playerUnarmed: {fileID: 0}
+  playerPistol: {fileID: 0}
+  playerRifle: {fileID: 0}
+  playerShotgun: {fileID: 0}
+  playerMachine: {fileID: 0}
   ranged_Enemy_Bullet: {fileID: 3156350405664354163, guid: 3850eb08f999f7242a4fe4df8a02c021,
     type: 3}
   player: {fileID: 0}
   animator: {fileID: 674180015005880801}
   health: 150
+  enemyDeath: {fileID: 8300000, guid: 72642684a4f3a224ca2c0dd34d3a1a3b, type: 3}
 --- !u!95 &674180015005880801
 Animator:
   serializedVersion: 3

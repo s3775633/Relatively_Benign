@@ -8,6 +8,8 @@ public class ShotGun_Bullet : MonoBehaviour
     public Rigidbody2D rb;
     public int damage = 15;
 
+    [SerializeField] private AudioClip enemyHit;
+
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Debug.Log(hitInfo);
@@ -17,6 +19,7 @@ public class ShotGun_Bullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.DamageFastEnemy(damage);
+                AudioManager.Instance.PlaySFX(enemyHit);
             }
         }
         else if (hitInfo.gameObject.GetComponent<Strong_Enemy>())
@@ -25,6 +28,7 @@ public class ShotGun_Bullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.DamageStrongEnemy(damage);
+                AudioManager.Instance.PlaySFX(enemyHit);
             }
         }
         else if (hitInfo.gameObject.GetComponent<Ranged_Enemy>())
@@ -33,6 +37,7 @@ public class ShotGun_Bullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.DamageRangedEnemy(damage);
+                AudioManager.Instance.PlaySFX(enemyHit);
             }
         }
         Destroy(gameObject);

@@ -18,6 +18,9 @@ public class Strong_Enemy : MonoBehaviour
     public float health = 200;
     public int attackPower = 25;
 
+    [SerializeField] private AudioClip enemyDeath;
+    [SerializeField] private AudioClip enemyAttack;
+
     public void DamageStrongEnemy(int damage)
     {
         health -= damage;
@@ -32,6 +35,7 @@ public class Strong_Enemy : MonoBehaviour
     void DieStrongEnemy()
     {
         Destroy(gameObject, 0.8f);
+        AudioManager.Instance.PlaySFX(enemyDeath);
     }
 
     void Start()
@@ -97,6 +101,7 @@ public class Strong_Enemy : MonoBehaviour
         if (player != null)
         {
             player.DamagePlayer(attackPower);
+            AudioManager.Instance.PlaySFX(enemyAttack);
         }
     }
 

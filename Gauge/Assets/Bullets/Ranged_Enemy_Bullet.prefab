@@ -134,4 +134,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerUnarmed: {fileID: 0}
+  playerPistol: {fileID: 0}
+  playerRifle: {fileID: 0}
+  playerShotgun: {fileID: 0}
+  playerMachine: {fileID: 0}
   damage: 40
+  playerHit: {fileID: 8300000, guid: 4b2ce14aabd642b47b0bdde460b7fbff, type: 3}

@@ -136,3 +136,4 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 7895218493248231377}
   damage: 15
+  enemyHit: {fileID: 8300000, guid: aa2d58807399b614595c4c0b4fd09380, type: 3}

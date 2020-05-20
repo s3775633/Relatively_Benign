@@ -146,10 +146,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerUnarmed: {fileID: 0}
+  playerPistol: {fileID: 0}
+  playerRifle: {fileID: 0}
+  playerShotgun: {fileID: 0}
+  playerMachine: {fileID: 0}
   animator: {fileID: -3294561443111794973}
   moveSpeed: 4
   health: 200
   attackPower: 25
+  enemyDeath: {fileID: 8300000, guid: 72642684a4f3a224ca2c0dd34d3a1a3b, type: 3}
+  enemyAttack: {fileID: 8300000, guid: 4b2ce14aabd642b47b0bdde460b7fbff, type: 3}
 --- !u!95 &-3294561443111794973
 Animator:
   serializedVersion: 3

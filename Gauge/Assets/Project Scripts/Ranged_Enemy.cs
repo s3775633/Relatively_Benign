@@ -23,6 +23,8 @@ public class Ranged_Enemy : MonoBehaviour
     private float fireRate = 2;
     private float nextFire = -1f;
 
+    [SerializeField] private AudioClip enemyDeath;
+
     public void DamageRangedEnemy(int damage)
     {
         health -= damage;
@@ -37,6 +39,7 @@ public class Ranged_Enemy : MonoBehaviour
     void DieRangedEnemy()
     {
         Destroy(gameObject, 1.3f);
+        AudioManager.Instance.PlaySFX(enemyDeath);
     }
 
     void Start()

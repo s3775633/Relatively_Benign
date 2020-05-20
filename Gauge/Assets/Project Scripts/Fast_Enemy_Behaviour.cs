@@ -18,6 +18,9 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
     public int health = 100;
     public int attackPower = 10;
 
+    [SerializeField] private AudioClip enemyDeath;
+    [SerializeField] private AudioClip enemyAttack;
+
     public void DamageFastEnemy(int damage)
     {
         health -= damage;
@@ -32,6 +35,7 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
     void DieFastEnemy()
     {
         Destroy(gameObject, 0.8f);
+        AudioManager.Instance.PlaySFX(enemyDeath);
     }
 
     void Start()
@@ -98,6 +102,7 @@ public class Fast_Enemy_Behaviour : MonoBehaviour
         if (player != null)
         {
             player.DamagePlayer(attackPower);
+            AudioManager.Instance.PlaySFX(enemyAttack);
         }
     }
 

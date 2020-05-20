@@ -12,6 +12,8 @@ public class Ranged_Enemy_Bullet : MonoBehaviour
     public GameObject playerMachine;
     public int damage = 40;
 
+    [SerializeField] private AudioClip playerHit;
+
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Debug.Log(hitInfo);
@@ -21,38 +23,41 @@ public class Ranged_Enemy_Bullet : MonoBehaviour
             if (player != null)
             {
                 player.DamagePlayer(damage);
+                AudioManager.Instance.PlaySFX(playerHit);
             }
         }
         Destroy(gameObject);
     }
 
-    void Start(){}
-
-    void Update()
+    void Start()
     {
-		playerUnarmed = GameObject.Find("Player");
+        playerUnarmed = GameObject.Find("Player");
         playerPistol = GameObject.Find("Player_Pistol");
         playerRifle = GameObject.Find("RiflePlayer");
         playerShotgun = GameObject.Find("ShotgunPlayer");
-        playerMachine = GameObject.Find("MachinegunPlayer");
+        playerMachine = GameObject.Find("MachinePlayer");
+    }
 
-        if (playerUnarmed != null)
+    void Update()
+    {
+
+        if (playerUnarmed)
         {
             player = playerUnarmed.transform;
         }
-        else if (playerPistol != null)
+        else if (playerPistol)
         {
             player = playerPistol.transform;
         }
-        else if (playerRifle != null)
+        else if (playerRifle)
         {
             player = playerRifle.transform;
         }
-        else if (playerShotgun != null)
+        else if (playerShotgun)
         {
             player = playerShotgun.transform;
         }
-        else if (playerMachine != null)
+        else if (playerMachine)
         {
             player = playerMachine.transform;
         }
